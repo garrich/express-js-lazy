@@ -190,7 +190,7 @@ footer .footer-contents {
   }
 }
 body {
-  height: 1200px;
+  /*height: 1200px;*/
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   background: black;
