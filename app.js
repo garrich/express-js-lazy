@@ -6,4 +6,7 @@ publicDir = path.join(__dirname,'public');
 
 app.use(express.static(publicDir))
 
-app.listen(port);
+app.listen(port, function () {
+    console.log('Example app listening on port '+port+'!')
+});
+
