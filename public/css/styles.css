@@ -3,7 +3,7 @@
 }
 
 html, body {
-  height: 200%;
+  height: 100%;
 }
 
 html {
@@ -190,12 +190,16 @@ footer .footer-contents {
   }
 }
 body {
-  /*height: 1200px;*/
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   background: black;
   overflow: hidden;
   text-align: center;
+  background-image: linear-gradient(to top, #4B1d06 0%, #090401 51%,  #4B1d06 100%);
+  animation: gradient-vertical 10s infinite linear;
+  animation-delay: 0.1s;
+  background-size:  auto 200%;
+  background-position: top center;
 }
 h1{
   color: #fbda4f;
@@ -205,7 +209,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 800px;
+  height: 100%;
 }
 .point{
   position: absolute;
@@ -263,10 +267,10 @@ dl {
 dt {
   position:absolute;
   top:10px; left:0;
-  width:135px;
+  width:130px;
   text-align:center;
   background: #ddd;
-  border-right: 5px solid black;
+  /*border-right: 5px solid black;*/
   box-sizing: border-box;
   height: 60px;
   line-height: 60px;
@@ -281,9 +285,9 @@ dd {  position:absolute;
   height: 80px;
   line-height: 80px;
   font-size:60px; ;
-  border-right: 5px solid black;
+  /*border-right: 5px solid black;*/
   text-align:center;
-  width:135px;
+  width:130px;
   background: #fbda4f;
   margin: 0;
   box-sizing: border-box;
@@ -295,3 +299,9 @@ dt#hrs_lbl, dd#hours { left:405px;  }
 dt#mins_lbl, dd#minutes { left:540px; }
 dt#secs_lbl, dd#seconds { left:675px; }
 #dl * { text-outline: 1px 1px #000; }
+
+@keyframes gradient-vertical {
+  50% {
+    background-position: bottom center;
+  }
+}
